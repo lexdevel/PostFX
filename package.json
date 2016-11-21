@@ -1,0 +1,15 @@
+{
+    "name": "postfx",
+    "version": "1.0.0",
+    "description": "PostFX sample using WebGL",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lexdevel/PostFX.git"
+    },
+    "scripts": {
+        "compile": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.10"
+    }
+}
