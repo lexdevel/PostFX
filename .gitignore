@@ -1,2 +1,3 @@
 node_modules/
-*.js
+postfx.js
+postfx.min.js
