@@ -1,21 +1,18 @@
 {
     "name": "postfx",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "license": "MIT",
     "description": "PostFX sample using WebGL",
     "repository": {
         "type": "git",
         "url": "https://github.com/lexdevel/PostFX.git"
     },
     "scripts": {
-        "build": "webpack",
-        "compress": "gulp minify"
+        "build": "webpack"
     },
     "devDependencies": {
         "typescript": "^2.0.10",
         "ts-loader": "^1.2.2",
-        "webpack": "^1.13.3",
-        "gulp": "^3.9.1",
-        "gulp-uglify": "^2.0.0",
-        "gulp-rename": "^1.2.2"
+        "webpack": "^1.13.3"
     }
 }

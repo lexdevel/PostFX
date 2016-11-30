@@ -1,5 +1,4 @@
 node_modules/
-postfx.js
-postfx.min.js
+postfx.bundle.js
 source/**/*.js
 source/**/*.js.map

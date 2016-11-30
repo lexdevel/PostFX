@@ -3,7 +3,7 @@ var webpack = require("webpack");
 module.exports = {
     "entry": "./source/PostFX.ts",
     "output": {
-        "filename": "postfx.js"
+        "filename": "postfx.bundle.js"
     },
     "dev-tool": "source-map",
     "resolve": {
@@ -23,5 +23,8 @@ module.exports = {
                 "exclude": /node_modules/
             }
         ]
-    }
+    },
+    "plugins": [
+        new webpack.optimize.UglifyJsPlugin({ "minimize": true})
+    ]
 };
