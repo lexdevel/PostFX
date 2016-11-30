@@ -1,3 +1,12 @@
+import { GL }               from "../core/GL";
+import { AbstractRenderer } from "./AbstractRenderer";
+import { ShaderProgram }    from "../platform/ShaderProgram";
+import { VertexBuffer }     from "../platform/VertexBuffer";
+import { ElementArray }     from "../platform/ElementArray";
+import { FrameBuffer }      from "../platform/FrameBuffer";
+import { Viewport }         from "../util/Viewport";
+import { GameTime }         from "../util/GameTime";
+
 /**
  * The wave renderer shader params interface.
  */
@@ -11,7 +20,7 @@ interface WaveRendererShaderParams {
 /**
  * The wave renderer (PostFX).
  */
-class Wave extends AbstractRenderer {
+export class Wave extends AbstractRenderer {
     public viewport: Viewport;
     public frameBuffer: FrameBuffer;
 

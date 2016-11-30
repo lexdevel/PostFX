@@ -1,7 +1,9 @@
+import { Attachable } from "../core/Attachable";
+
 /**
  * The abstract platform entity class.
  */
-abstract class AbstractPlatformEntity<T> implements Attachable {
+export abstract class AbstractPlatformEntity<T> implements Attachable {
     public instance: T;
 
     /**

@@ -1,7 +1,7 @@
 /**
  * The attachable interface.
  */
-interface Attachable {
+export interface Attachable {
     
     /**
      * Attach the specified attachable.

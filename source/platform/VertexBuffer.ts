@@ -1,7 +1,10 @@
+import { Buffer}    from "./Buffer";
+import { GL }       from "../core/GL";
+
 /**
  * The vertex buffer class.
  */
-class VertexBuffer extends Buffer {
+export class VertexBuffer extends Buffer {
 
     /**
      * Constructor.

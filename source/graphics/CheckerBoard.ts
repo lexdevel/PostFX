@@ -1,3 +1,10 @@
+import { GL }               from "../core/GL";
+import { AbstractRenderer } from "./AbstractRenderer";
+import { ShaderProgram }    from "../platform/ShaderProgram";
+import { VertexBuffer }     from "../platform/VertexBuffer";
+import { ElementArray }     from "../platform/ElementArray";
+import { Viewport }         from "../util/Viewport";
+
 /**
  * The checkerboard renderer shader params interface.
  */
@@ -9,7 +16,7 @@ interface CheckerBoardRendererShaderParams {
 /**
  * The checkerboard renderer.
  */
-class CheckerBoard extends AbstractRenderer {
+export class CheckerBoard extends AbstractRenderer {
     public viewport: Viewport;
 
     public vertexBuffer: VertexBuffer;

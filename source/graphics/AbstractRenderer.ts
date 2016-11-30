@@ -1,13 +1,16 @@
+import { ShaderProgram }    from "../platform/ShaderProgram";
+
 /**
  * The renderer class.
  */
-abstract class AbstractRenderer {
+export abstract class AbstractRenderer {
     public shaderProgram: ShaderProgram;
     public parent: AbstractRenderer;
 
     /**
      * Constructor.
      * @param shaderProgram The renderer's shader program
+     * @param parent The parent renderer
      */
     public constructor(shaderProgram: ShaderProgram, parent: AbstractRenderer = null) {
         this.shaderProgram = shaderProgram;

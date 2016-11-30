@@ -1,7 +1,7 @@
 /**
  * The game time class.
  */
-class GameTime {
+export class GameTime {
     public static initial: number = Date.now();
 
     /**

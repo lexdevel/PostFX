@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
+        "module": "commonjs",
         "target": "es5",
-        "outFile": "postfx.js",
-        "removeComments": true
+        "sourceMap": true,
+        "removeComments": false
     },
     "exclude": [
         "node_modules"

@@ -1,7 +1,10 @@
+import { AbstractPlatformEntity }   from "./AbstractPlatformEntity";
+import { GL }                       from "../core/GL";
+
 /**
  * The shader program class.
  */
-class ShaderProgram extends AbstractPlatformEntity<WebGLProgram> {
+export class ShaderProgram extends AbstractPlatformEntity<WebGLProgram> {
 
     /**
      * Constructor.
@@ -19,14 +22,6 @@ class ShaderProgram extends AbstractPlatformEntity<WebGLProgram> {
 
         GL.compileShader(vert);
         GL.compileShader(frag);
-
-        if (GL.getShaderParameter(vert, GL.COMPILE_STATUS) == 0) {
-            console.error(GL.getShaderInfoLog(vert));
-        }
-
-        if (GL.getShaderParameter(frag, GL.COMPILE_STATUS) == 0) {
-            console.error(GL.getShaderInfoLog(frag));
-        }
 
         GL.attachShader(this.instance, vert);
         GL.attachShader(this.instance, frag);

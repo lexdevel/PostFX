@@ -7,11 +7,13 @@
         "url": "https://github.com/lexdevel/PostFX.git"
     },
     "scripts": {
-        "compile": "tsc",
-        "minify": "gulp minify"
+        "build": "webpack",
+        "compress": "gulp minify"
     },
     "devDependencies": {
         "typescript": "^2.0.10",
+        "ts-loader": "^1.2.2",
+        "webpack": "^1.13.3",
         "gulp": "^3.9.1",
         "gulp-uglify": "^2.0.0",
         "gulp-rename": "^1.2.2"

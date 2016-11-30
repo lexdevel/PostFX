@@ -1,7 +1,10 @@
+import { Buffer}    from "./Buffer";
+import { GL }       from "../core/GL";
+
 /**
  * The element array class.
  */
-class ElementArray extends Buffer {
+export class ElementArray extends Buffer {
     public length: number = 0;
 
     /**

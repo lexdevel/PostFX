@@ -1,7 +1,7 @@
 /**
  * The viewport interface.
  */
-interface Viewport {
+export interface Viewport {
     w: number;
     h: number;
 }

@@ -1,7 +1,10 @@
+import { AbstractPlatformEntity }   from "./AbstractPlatformEntity";
+import { GL }                       from "../core/GL";
+
 /**
  * The buffer class.
  */
-abstract class Buffer extends AbstractPlatformEntity<WebGLBuffer> {
+export abstract class Buffer extends AbstractPlatformEntity<WebGLBuffer> {
     public target: number;
 
     /**
