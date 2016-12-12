@@ -6,6 +6,7 @@ import { ElementArray }     from "../platform/ElementArray";
 import { FrameBuffer }      from "../platform/FrameBuffer";
 import { Viewport }         from "../util/Viewport";
 import { GameTime }         from "../util/GameTime";
+import { Drawable }         from "../core/Drawable";
 
 /**
  * The wave renderer shader params interface.
@@ -20,7 +21,7 @@ interface WaveRendererShaderParams {
 /**
  * The wave renderer (PostFX).
  */
-export class Wave extends AbstractRenderer {
+export class Wave extends AbstractRenderer implements Drawable {
     public viewport: Viewport;
     public frameBuffer: FrameBuffer;
 

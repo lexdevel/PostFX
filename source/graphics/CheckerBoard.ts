@@ -4,6 +4,7 @@ import { ShaderProgram }    from "../platform/ShaderProgram";
 import { VertexBuffer }     from "../platform/VertexBuffer";
 import { ElementArray }     from "../platform/ElementArray";
 import { Viewport }         from "../util/Viewport";
+import { Drawable }         from "../core/Drawable";
 
 /**
  * The checkerboard renderer shader params interface.
@@ -16,7 +17,7 @@ interface CheckerBoardRendererShaderParams {
 /**
  * The checkerboard renderer.
  */
-export class CheckerBoard extends AbstractRenderer {
+export class CheckerBoard extends AbstractRenderer implements Drawable {
     public viewport: Viewport;
 
     public vertexBuffer: VertexBuffer;

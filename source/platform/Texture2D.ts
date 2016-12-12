@@ -8,15 +8,17 @@ export class Texture2D extends AbstractPlatformEntity<WebGLTexture> {
 
     /**
      * Constructor.
+     * @param filter The filter
+     * @param wrap The wrap
      */
-    public constructor() {
+    public constructor(filter: number = GL.LINEAR, wrap: number = GL.CLAMP_TO_EDGE) {
         super(GL.createTexture());
 
         this.attach();
-        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_MIN_FILTER, GL.LINEAR);
-        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_MAG_FILTER, GL.LINEAR);
-        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_WRAP_S, GL.CLAMP_TO_EDGE);
-        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_WRAP_T, GL.CLAMP_TO_EDGE);
+        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_MIN_FILTER, filter);
+        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_MAG_FILTER, filter);
+        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_WRAP_S, wrap);
+        GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_WRAP_T, wrap);
         this.detach();
     }
 
