@@ -45,10 +45,10 @@ export class Wave extends AbstractRenderer implements Drawable {
         this.frameBuffer = new FrameBuffer(viewport.w, viewport.h);
 
         this.shaderParams = {
-            a_position : GL.getAttribLocation(this.shaderProgram.instance, "a_position"),
-            a_texcoord : GL.getAttribLocation(this.shaderProgram.instance, "a_texcoord"),
-            u_teximage : GL.getUniformLocation(this.shaderProgram.instance, "u_teximage"),
-            u_time     : GL.getUniformLocation(this.shaderProgram.instance, "u_time")
+            a_position: GL.getAttribLocation(this.shaderProgram.instance, "a_position"),
+            a_texcoord: GL.getAttribLocation(this.shaderProgram.instance, "a_texcoord"),
+            u_teximage: GL.getUniformLocation(this.shaderProgram.instance, "u_teximage"),
+            u_time: GL.getUniformLocation(this.shaderProgram.instance, "u_time")
         };
     }
 
