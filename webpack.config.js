@@ -1,26 +1,25 @@
 var webpack = require("webpack");
 
 module.exports = {
-    "entry": "./source/PostFX.ts",
+    "entry": "./source/PostFX",
     "output": {
         "filename": "postfx.bundle.js"
     },
-    "dev-tool": "source-map",
     "resolve": {
         "extensions": [
-            "",
-            ".webpack.js",
-            ".web.js",
             ".ts",
             ".js"
         ]
     },
     "module": {
-        "loaders": [
+        "rules": [
             {
                 "test": /\.ts$/,
-                "loaders": [ "ts-loader" ],
-                "exclude": /node_modules/
+                "use": [
+                    {
+                        "loader": "ts-loader"
+                    }
+                ]
             }
         ]
     },

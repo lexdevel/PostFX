@@ -11,8 +11,8 @@
         "build": "webpack"
     },
     "devDependencies": {
-        "typescript": "^2.0.10",
-        "ts-loader": "^1.2.2",
-        "webpack": "^1.13.3"
+        "typescript": "^2.1.6",
+        "ts-loader": "^2.0.0",
+        "webpack": "^2.2.1"
     }
 }
