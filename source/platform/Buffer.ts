@@ -5,7 +5,7 @@ import { GL }                       from "../core/GL";
  * The buffer class.
  */
 export abstract class Buffer extends AbstractPlatformEntity<WebGLBuffer> {
-    public target: number;
+    protected target: number;
 
     /**
      * Constructor.

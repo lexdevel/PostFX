@@ -1,3 +1,5 @@
+import { MathHelper } from "./../util/MathHelper";
+
 /**
  * The matrix class for WebGL transformations.
  */
@@ -32,10 +34,10 @@ export class Matrix {
 
     /**
      * Create the translation matrix.
-     * @param x
-     * @param y
+     * @param x The translation X factor
+     * @param y The translation Y factor
      */
-    public static move(x: number, y: number): Matrix {
+    public static translate(x: number, y: number): Matrix {
         let matrix = Matrix.identity();
 
         matrix.elements[0 + 3 * 4] = x;
@@ -51,7 +53,7 @@ export class Matrix {
     public static rotate(rotation: number): Matrix {
         let matrix = Matrix.identity();
 
-        let rad = Math.toRadians(rotation);
+        let rad = MathHelper.toRadians(rotation);
         let sin = Math.sin(rad);
         let cos = Math.cos(rad);
 
@@ -65,10 +67,10 @@ export class Matrix {
 
     /**
      * Create the scale matrix.
-     * @param w
-     * @param h
+     * @param w The scale X factor
+     * @param h The scale Y factor
      */
-    public static resize(w: number, h: number): Matrix {
+    public static scale(w: number, h: number): Matrix {
         let matrix = Matrix.identity();
 
         matrix.elements[0 + 0 * 4] = w;
@@ -96,6 +98,10 @@ export class Matrix {
         return matrix;
     }
 
+    /**
+     * Multiply the current matrix by the specified matrix.
+     * @param matrix The specified matrix
+     */
     public multiply(matrix: Matrix): Matrix {
         let result = new Matrix();
 

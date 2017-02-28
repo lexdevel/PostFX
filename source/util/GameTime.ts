@@ -8,7 +8,7 @@ export class GameTime {
      * Constructor.
      * @throws Always throws an exception because of static class.
      */
-    constructor() {
+    private constructor() {
         throw new Error("Allowed static usage of class only");
     }
 

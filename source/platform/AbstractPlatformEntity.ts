@@ -3,14 +3,14 @@ import { Attachable } from "../core/Attachable";
 /**
  * The abstract platform entity class.
  */
-export abstract class AbstractPlatformEntity<T> implements Attachable {
+export abstract class AbstractPlatformEntity<T extends WebGLObject> implements Attachable {
     public instance: T;
 
     /**
      * Constructor.
      * @param instance The native platform entity instance
      */
-    public constructor(instance: T) {
+    protected constructor(instance: T) {
         this.instance = instance;
     }
 
