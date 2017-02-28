@@ -27,8 +27,8 @@ export class Transformation {
      */
     public calcTransformationMatrix(): Matrix {
         return Matrix.identity()
-            .multiply(Matrix.move(this.position.x, this.position.y))
+            .multiply(Matrix.translate(this.position.x, this.position.y))
             .multiply(Matrix.rotate(this.rotation))
-            .multiply(Matrix.resize(this.size.w, this.size.h));
+            .multiply(Matrix.scale(this.size.w, this.size.h));
     }
 }
