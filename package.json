@@ -1,6 +1,6 @@
 {
     "name": "postfx",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "description": "PostFX sample using WebGL",
     "repository": {
@@ -12,9 +12,10 @@
         "start": "webpack-dev-server --inline --port 3000"
     },
     "devDependencies": {
-        "typescript": "^2.2.1",
-        "ts-loader": "^2.0.1",
-        "webpack": "^2.2.1",
-        "webpack-dev-server": "^2.4.1"
+        "typescript": "^3.2.2",
+        "ts-loader": "^5.3.3",
+        "webpack": "^4.28.1",
+        "webpack-cli": "^3.2.1",
+        "webpack-dev-server": "^3.1.14"
     }
 }
