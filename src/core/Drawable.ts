@@ -6,13 +6,13 @@ import { ElementArray } from "../platform/ElementArray";
  */
 export interface Drawable {
 
-    /**
-     * The vertex buffer.
-     */
-    vertexBuffer: VertexBuffer;
+  /**
+   * The vertex buffer.
+   */
+  vertexBuffer: VertexBuffer;
 
-    /**
-     * The element array.
-     */
-    elementArray: ElementArray;
+  /**
+   * The element array.
+   */
+  elementArray: ElementArray;
 }

@@ -1,7 +1,12 @@
 module.exports = {
   "entry": "./src/PostFX",
+  "mode": "production",
   "output": {
     "filename": "postfx.bundle.js"
+  },
+  "devServer": {
+    "hot": false,
+    "client": false
   },
   "resolve": {
     "extensions": [
